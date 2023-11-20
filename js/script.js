@@ -1,3 +1,4 @@
+// -- Hamburger navbar -- //
 const navLink = document.getElementById('nav-link')
 const navBtn = document.getElementById('nav-btn')
 const icon = document.getElementById('icon')
@@ -23,3 +24,23 @@ window.onclick = function (event) {
 		navLink.style.display = "none";
 	}
 }
+//-END-//
+
+
+// -- Scroll to top -- //
+const topBtn = document.getElementById('top-btn')
+
+// Fungsi ketika window discroll
+window.onscroll = () => {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+};
+
+// Fungsi untuk button go to top
+function goToTop() {
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+//-END-//

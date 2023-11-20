@@ -33,7 +33,28 @@ body {
 	background-color: var(--primary);
 }
 
+.go-top {
+	display: none;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	color: var(--accent);
+	background-color: var(--primary);
+	border: 2px solid var(--accent);
+	border-radius: 50px;
+	font-size: 20px;
+	text-align: center;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	transition: all 0.2s ease-in-out;
+}
 
+.go-top:hover{
+	background-color: var(--accent);
+	color: var(--primary);
+	bottom: 25px;
+}
 
 .container {
 	max-width: 1280px;
@@ -84,6 +105,7 @@ nav a {
 	transition: transform .3s ease-out;
 	display: inline-block;
 	padding: 10px;
+	cursor: pointer;
 }
 
 nav a:hover {
