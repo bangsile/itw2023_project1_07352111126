@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+	--primary: #17161d;
+	--secondary: #eaeaea;
+	--accent: wheat;
+	/*#838fba  c9d7c0*/
+}
+
+/* Change the color of the scrollbar track */
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+	/* You can adjust the width */
+	background: transparent;
+	/* Change this to the color you prefer */
+	border-radius: 6px;
+	/* Adjust the value to control the roundness */
+}
+
+/* Change the color and make the scrollbar thumb rounded */
+::-webkit-scrollbar-thumb {
+	background: var(--accent);
+	/* Change this to the color you prefer */
+	border-radius: 6px;
+	/* Adjust the value to control the roundness */
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: var(--secondary);
+	background-color: var(--primary);
+}
+
+.container {
+	max-width: 1280px;
+	margin: auto;
+	padding: 0 40px;
+}
+
+header {
+	background-color: var(--primary);
+	padding: 15px 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.025);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+.navbar {
+	/* border: 1px solid greenyellow ; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-family: 'Pacifico', cursive;
+	font-size: 24px;
+	color: var(--accent);
+}
+
+header nav ul {
+	/* border: 1px solid green; */
+	display: flex;
+	gap: 20px;
+	/* padding: 5px; */
+}
+
+header nav ul li {
+	/* border: 1px solid blue; */
+	/* padding: 10px; */
+	font-weight: 500;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--secondary);
+	transition: transform .3s ease-out;
+	display: inline-block;
+	padding: 10px;
+}
+
+nav a:hover {
+	color: var(--accent);
+	transform: translateY(-2px);
+}
+
+.content {
+	margin-top: 200px;
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero img {
+	height: 300px;
+	border-radius: 50%;
+	/* border: 3px solid var(--accent); */
+	animation-name: wiggle;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.hero .desc {
+	/* border: 1px solid yellow; */
+}
+
+.desc h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 24px;
+}
+
+.desc h2 {
+	margin-top: 7px;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.desc h4 {
+	margin-top: 7px;
+	color: #a5a5a5;
+}
+
+.desc p {
+	margin-top: 20px;
+}
+
+.desc .contact-btn {
+	/* background-color: var(--accent); */
+	border: 2px solid var(--accent);
+	display: inline-block;
+	margin-top: 16px;
+	padding: 10px 15px;
+	border-radius: 20px;
+	color: var(--accent);
+	font-weight: 600;
+	transition: all 0.3s ease-in-out;
+}
+
+.desc .contact-btn:hover {
+	transform: translateX(10px);
+	background-color: var(--accent);
+	color: var(--primary);
+}
+
+.desc span {
+	color: var(--accent);
+}
+
+section {
+	/* border: 1px solid white; */
+}
+
+
+
+.lo {
+	min-height: 500px;
+}
+
+
+/* animation */
+@keyframes wiggle {
+	0%   {transform: rotate(0deg);}
+	50%   {transform: rotate(1deg);}
+	100%   {transform: rotate(0deg);}
+  }
