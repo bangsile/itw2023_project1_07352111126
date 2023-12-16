@@ -2,6 +2,7 @@
 const navLink = document.getElementById('nav-link')
 const navBtn = document.getElementById('nav-btn')
 const icon = document.getElementById('icon')
+const header = document.querySelector('header')
 
 let isOpen = false
 
@@ -18,13 +19,7 @@ navBtn.onclick = () => {
 		isOpen = !isOpen
 	}
 }
-
-window.onclick = function (event) {
-	if (event.target == navLink) {
-		navLink.style.display = "none";
-	}
-}
-//-END-//
+//- HMBGR END -//
 
 
 // -- Scroll to top -- //
@@ -34,8 +29,10 @@ const topBtn = document.getElementById('top-btn')
 window.onscroll = () => {
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topBtn.style.display = "block";
+		header.classList.add('nav-shadow')
   } else {
     topBtn.style.display = "none";
+		header.classList.remove('nav-shadow')
   }
 };
 

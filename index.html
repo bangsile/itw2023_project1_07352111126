@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 
 <head>
 	<meta charset="UTF-8">
@@ -13,16 +13,16 @@
 </head>
 
 <body>
-	<header class="">
+	<header class="" id>
 		<div class="container navbar">
 			<div class="logo">bangsile</div>
 			<nav>
 				<ul id="nav-link">
-					<li><a onclick="goToTop()">Home</a></li>
-					<li><a href="#profile">Profile</a></li>
-					<li><a href="#a">Skill</a></li>
-					<li><a href="">Portfolio</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a onclick="goToTop()">HOME</a></li>
+					<li><a href="#skill">SKILL</a></li>
+					<li><a href="">PROJECT</a></li>
+					<li><a href="#">EXPERIENCE</a></li>
+					<li><a href="">CONTACT</a></li>
 				</ul>
 			</nav>
 			<button id="nav-btn" class="hmbg"><i id="icon" class="fa-solid fa-bars"></i></button>
@@ -38,20 +38,61 @@
 					<h1>Hola!</h1>
 					<h2>I'm <span>Asil Taufiqurrahman</span></h2>
 					<h4>College Student & <span> Web Developer</span></h4>
-					<p>"Lu bisa Javascript, lu punya kuasa."</p>
+					<!-- <p>"Lu bisa Javascript, lu punya kuasa."</p> -->
+					<p>A 3rd year student who is passionate in Web Development. Contributed to several project of web development
+						and able to work well in team with leadership and fast learning skill.</p>
 
-					<a href="">
-						<div class="contact-btn">Contact Me</div>
-					</a>
+					<div class="social">
+						<a href="https://instagram.com/bangsile_" class="soc-med">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+						<a href="https://github.com/bangsile" class="soc-med">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a href="">
+							<div class="contact-btn">Contact Me</div>
+						</a>
+					</div>
 				</div>
-				<div>
+				<div class="profil">
 					<img src="img/profilpic.jpeg" alt="">
 				</div>
 			</div>
 		</section>
-		
-		<section >
 
+		<section id="skill" class="skill ">
+		<div class="container">
+			<!-- Skill -->
+				<h1 class="title">SKILL</h1>
+				<div class="my-skill ">
+					<div class="programming">
+						<h1>PROGRAMMING</h1>
+						<div class="logo">
+							<img src="img/icon/cpp.png" alt="" height="40px">
+							<img src="img/icon/python.png" alt="" height="40px">
+							<img src="img/icon/java.png" alt="" height="70px">
+							<img src="img/icon/php.png" alt="" height="40px">
+							<img src="img/icon/laravel.png" alt="" height="40px">
+							<img src="img/icon/tailwind.png" alt="" height="30px">
+							<img src="img/icon/react.png" alt="" height="40px">
+							<img src="img/icon/next.png" alt="" height="40px">
+							<!-- <img src="img/icon/" alt="" height="100px"> -->
+						</div>
+					</div>
+					<div class="other">
+						<h1>OTHER</h1>
+						<div class="logo">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="project" class="project">
+			<div class="container">
+				<h1 class="title">PROJECT</h1>
+			</div>
 		</section>
 		<div class="lo"></div>
 
@@ -59,6 +100,8 @@
 	<button id="top-btn" onclick="goToTop()" class="go-top">
 		<i class="fa-solid fa-angle-up"></i>
 	</button>
+
+
 
 
 
