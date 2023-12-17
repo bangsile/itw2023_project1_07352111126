@@ -11,7 +11,8 @@
 }
 
 .dark:root {
-	--primary: #17161d;
+	--primary: #1f1d27;
+	--secondary: #1b1922;
 	--text-color: #eaeaea;
 	--accent: wheat;
 	scroll-behavior: smooth;
@@ -99,17 +100,15 @@ header {
 }
 
 nav ul {
-	/* border: 1px solid green; */
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
 	font-weight: 500;
-	/* padding: 5px; */
+	align-items: center;
 }
 
-nav a {
+nav a, nav i {
 	text-decoration: none;
-	/* font-size: 14px; */
 	color: var(--text-color);
 	transition: transform .3s ease-out;
 	display: inline-block;
@@ -117,7 +116,7 @@ nav a {
 	cursor: pointer;
 }
 
-nav a:hover {
+nav a:hover, nav i:hover {
 	color: var(--accent);
 	transform: translateY(-2px);
 }
@@ -217,20 +216,27 @@ nav a:hover {
 }
 
 
-.skill {
+section {
 	/* margin-top: 10px; */
 	padding: 90px 0;
+}
+section.skill, section.experience {
 	background-color: var(--secondary);
 }
 
 h1.title {
 	font-size: 26px;
 	font-weight: 600;
-	color: var(--accent);
+	/* color: var(--accent); */
 	text-align: center;
+	width: 200px;
+	margin: 0 auto;
+	padding-bottom: 5px;
+	border-bottom: 3px solid var(--accent);
+
 }
 
-.my-skill {
+.my-skill, .my-project, .my-exp {
 	margin: 10px auto 0 auto;
 	display: flex;
 	gap: 50px;
@@ -248,8 +254,7 @@ h1.title {
 	font-size: 1.2em;
 }
 
-.my-skill .programming,
-.my-skill .other {
+.box {
 	width: 50%;
 	/* border: 1px solid var(--accent); */
 	border-radius: 15px;
@@ -274,16 +279,6 @@ h1.title {
 	place-items: center;
 }
 
-/* .my-skill .other {
-	width: 50%;
-	border: 1px solid var(--accent);
-	border-radius: 25px;
-	height: 200px;
-	padding: 15px;
-} */
-
-
-
 .my-skill  img{
 	transition: all .3s ease-in-out;
 }
@@ -292,12 +287,133 @@ h1.title {
 	transform: scale(1.2);
 }
 
-section {
-	/* border: 1px solid white; */
+.my-project .box {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	height: 400px;
+	padding: 15px;
+	border: 2px solid var(--secondary);
+	background-color: var(--secondary);
 }
 
-.lo {
-	min-height: 1000px;
+.my-project h1 {
+	font-weight: 600;
+	color: var();
+}
+
+.box .image {
+	height: 75%;
+	background-size: cover;
+	background-position-x: center;
+	border-radius: 10px;
+}
+
+.techs {
+	padding: 10px 0;
+	display: flex;
+	gap: 10px;
+}
+
+.tech {
+	background-color: var(--accent);
+	padding: 4px 10px;
+	border-radius: 50px;
+	font-size: 0.8em;
+	font-weight: 600;
+	color: var(--primary);
+}
+
+.my-exp h1 {
+	text-align: center;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.my-exp .box {
+	height: 400px;
+	/* padding: 20px; */
+}
+
+.my-exp .box .image {
+	height: 90%;
+	background-position: center;
+}
+
+.contact-me {
+	/* border: 2px solid var(--accent); */
+	display: flex;
+	justify-content: space-between;
+}
+
+.my-contact h1 {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.my-contact h3 {
+	margin-top: 7px;
+	font-weight: 600;
+	color: var(--accent);
+}
+
+.my-contact h4 {
+	margin-top: 4px;
+}
+
+.my-contact p {
+	margin-top: 15px;
+	line-height: 20px;
+}
+
+.form-contact {
+	width: 500px;
+	/* border: 2px solid var(--accent); */
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 10px ;
+}
+
+.form-contact input, textarea {
+	height: 30px;
+	border-radius: 6px;
+	border: 2px solid var(--accent);
+	padding: 5px 10px;
+	font-size: 16px;
+}
+
+.form-contact textarea {
+	height: 100px;
+}
+
+.form-contact input:focus, textarea:focus {
+	outline: none;
+	border: 3px solid var(--accent);
+}
+
+.form-contact button {
+	padding: 10px;
+	color: var(--primary);
+	background-color: var(--accent);
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: left;
+}
+
+.form-contact button:active {
+	border: 1px solid var(--accent);
+	color: var(--accent);
+	background-color: var(--primary);
+}
+
+.dark .form-contact input, .dark .form-contact textarea {
+	background-color: var(--secondary);
+	border: none;
+	color: var(--text-color);
 }
 
 
@@ -391,15 +507,18 @@ section {
 		font-size: 24px;
 	}
 
-	.my-skill {
+	.my-skill, .my-project, .my-exp {
 		max-width: 500px;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.my-skill .programming,
-	.my-skill .other {
+	.box {
 		width: 80%;
+	}
+
+	.my-project .box, .my-exp .box {
+		height: 300px;
 	}
 
 	.my-skill img {}
@@ -407,6 +526,16 @@ section {
 	.my-skill::-webkit-scrollbar {
 		display: block;
 		height: 2px;
+	}
+
+	.contact-me {
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.form-contact {
+		width: 100%;
 	}
 
 }
@@ -439,16 +568,3 @@ section {
 	}
 }
 
-@keyframes slide {
-	0% {
-		transform: translateX(0);
-	}
-
-	50% {
-		transform: translateX(-400px);
-	}
-
-	100% {
-		transform: translateX(0);
-	}
-}

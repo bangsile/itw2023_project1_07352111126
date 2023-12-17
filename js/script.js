@@ -41,3 +41,30 @@ function goToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 //-END-//
+
+
+// --LIGHT & DARK THEME-- //
+const themeBtn = document.querySelector('#theme')
+const theme = document.querySelector('html')
+
+let dark = false
+
+console.log('luar',dark)
+themeBtn.onclick = () => {
+	if (!dark){
+		dark = !dark
+		theme.classList.remove('light')
+		theme.classList.add('dark')
+		themeBtn.classList.remove('fa-moon')
+		themeBtn.classList.add('fa-sun')
+	} else {
+		dark = !dark
+		theme.classList.remove('dark')
+		theme.classList.add('light')
+		themeBtn.classList.remove('fa-sun')
+		themeBtn.classList.add('fa-moon')
+	}
+}
+
+
+
