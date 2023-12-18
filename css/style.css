@@ -295,6 +295,26 @@ h1.title {
 	padding: 15px;
 	border: 2px solid var(--secondary);
 	background-color: var(--secondary);
+	transition: all .2s ease-in-out;
+}
+
+.my-project .siman-perpus {
+	background-image: url(../img/project/siman-perpus.png);;
+}
+.my-project .animelist {
+	background-image: url(../img/project/animelist.png);;
+}
+
+.my-project .box:hover {
+	transform: scale(1.1);
+}
+
+.my-project .box:hover .siman-perpus {
+	background-image: url(../img/project/siman-perpus.gif);
+}
+
+.my-project .box:hover .animelist {
+	background-image: url(../img/project/animelist.gif);
 }
 
 .my-project h1 {
@@ -531,6 +551,7 @@ h1.title {
 	.contact-me {
 		flex-direction: column;
 		align-items: center;
+		justify-content: start;
 		gap: 30px;
 	}
 
