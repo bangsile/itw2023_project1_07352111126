@@ -1,199 +1,211 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangsile</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bangsile</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <div class="logo">bangsile</div>
+        <nav>
+          <ul id="nav-link">
+            <li><a onclick="goToTop()">HOME</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#project">PROJECT</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><i id="theme" class="fa-solid fa-moon"></i></li>
+          </ul>
+        </nav>
+        <button id="nav-btn" class="hmbg">
+          <i id="icon" class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
 
-<body>
-	<header>
-		<div class="container navbar">
-			<div class="logo">bangsile</div>
-			<nav>
-				<ul id="nav-link">
-					<li><a onclick="goToTop()">HOME</a></li>
-					<li><a href="#skill">SKILL</a></li>
-					<li><a href="#project">PROJECT</a></li>
-					<li><a href="#experience">EXPERIENCE</a></li>
-					<li><a href="#contact">CONTACT</a></li>
-					<li><i id="theme" class="fa-solid fa-moon"></i></li>
-				</ul>
-			</nav>
-			<button id="nav-btn" class="hmbg"><i id="icon" class="fa-solid fa-bars"></i></button>
-		</div>
-	</header>
+    <div id="" class="content">
+      <!-- Hero -->
+      <!-- <section id=""> -->
+      <div class="hero container">
+        <div class="desc">
+          <h1>Hola!</h1>
+          <h2>I'm <span>Asil Taufiqurrahman</span></h2>
+          <h4>College Student & <span> Web Developer</span></h4>
+          <!-- <p>"Lu bisa Javascript, lu punya kuasa."</p> -->
+          <p>
+            A 3rd year student who is passionate in Web Development. Contributed
+            to several project of web development and able to work well in team
+            with leadership and fast learning skill.
+          </p>
 
-	<div id="" class="content">
+          <div class="social">
+            <a href="https://instagram.com/bangsile_" class="soc-med">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/bangsile" class="soc-med">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#contact">
+              <div class="contact-btn">Contact Me</div>
+            </a>
+          </div>
+        </div>
+        <div class="profil">
+          <img src="img/profilpic.jpeg" alt="" />
+        </div>
+      </div>
+      <!-- </section> -->
 
-		<!-- Hero -->
-		<!-- <section id=""> -->
-			<div class="hero container">
-				<div class="desc">
-					<h1>Hola!</h1>
-					<h2>I'm <span>Asil Taufiqurrahman</span></h2>
-					<h4>College Student & <span> Web Developer</span></h4>
-					<!-- <p>"Lu bisa Javascript, lu punya kuasa."</p> -->
-					<p>A 3rd year student who is passionate in Web Development. Contributed to several project of web development
-						and able to work well in team with leadership and fast learning skill.</p>
+      <!-- SKILL -->
+      <section id="skill" class="skill">
+        <div class="container">
+          <h1 class="title">SKILL</h1>
+          <div class="my-skill">
+            <div class="box">
+              <h1>PROGRAMMING</h1>
+              <div class="logo">
+                <img src="img/icon/cpp.png" alt="" height="40px" />
+                <img src="img/icon/python.png" alt="" height="40px" />
+                <img src="img/icon/java.png" alt="" height="70px" />
+                <img src="img/icon/php.png" alt="" height="40px" />
+                <img src="img/icon/laravel.png" alt="" height="40px" />
+                <img src="img/icon/tailwind.png" alt="" height="30px" />
+                <img src="img/icon/react.png" alt="" height="40px" />
+                <img src="img/icon/next.png" alt="" height="40px" />
+              </div>
+            </div>
+            <div class="box">
+              <h1>OTHER</h1>
+              <div class="logo">
+                <img src="img/icon/ai.png" alt="" height="60px" />
+                <img src="img/icon/affinity.png" alt="" height="70px" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SKILL END -->
 
-					<div class="social">
-						<a href="https://instagram.com/bangsile_" class="soc-med">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-						<a href="https://github.com/bangsile" class="soc-med">
-							<i class="fa-brands fa-github"></i>
-						</a>
-						<a href="#contact">
-							<div class="contact-btn">Contact Me</div>
-						</a>
-					</div>
-				</div>
-				<div class="profil">
-					<img src="img/profilpic.jpeg" alt="">
-				</div>
-			</div>
-		<!-- </section> -->
+      <!-- PROJECT -->
+      <section id="project" class="project">
+        <div class="container">
+          <h1 class="title">PROJECT</h1>
+          <div class="my-project">
+            <div class="box">
+              <div class="image siman-perpus"></div>
+              <div>
+                <h1>SISTEM MANAJEMEN PERPUSTAKAAN SEKOLAH</h1>
+                <div class="techs">
+                  <div class="tech">Laravel</div>
+                  <div class="tech">Tailwind</div>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="image animelist"></div>
+              <div>
+                <h1>ANIMELIST</h1>
+                <div class="techs">
+                  <div class="tech">NEXT.js</div>
+                  <div class="tech">React</div>
+                  <div class="tech">Tailwind</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECT END -->
 
+      <!-- EXPERIENCE -->
+      <section id="experience" class="experience">
+        <div class="container">
+          <h1 class="title">EXPERIENCE</h1>
+          <div class="my-exp">
+            <div class="box">
+              <div
+                class="image"
+                style="background-image: url(img/exp/fga.png)"
+              ></div>
+              <div>
+                <h1>FGA : Database Design & Programming with SQL</h1>
+              </div>
+            </div>
+            <div class="box">
+              <div
+                class="image"
+                style="background-image: url(img/exp/oracle.png)"
+              ></div>
+              <div>
+                <h1>Oracle Certified Foundations Associate, Database</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- EXPERIENCE END -->
 
+      <!-- CONTACT -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <!-- <h1 class="title">CONTACT ME</h1> -->
+          <div class="contact-me">
+            <div class="my-contact">
+              <h1>Contact Me</h1>
+              <h3>Let's get closer</h3>
+              <h4>Feel free to contact me for collab and business</h4>
 
-		<!-- SKILL -->
-		<section id="skill" class="skill ">
-		<div class="container">
-				<h1 class="title">SKILL</h1>
-				<div class="my-skill ">
-					<div class="box">
-						<h1>PROGRAMMING</h1>
-						<div class="logo">
-							<img src="img/icon/cpp.png" alt="" height="40px">
-							<img src="img/icon/python.png" alt="" height="40px">
-							<img src="img/icon/java.png" alt="" height="70px">
-							<img src="img/icon/php.png" alt="" height="40px">
-							<img src="img/icon/laravel.png" alt="" height="40px">
-							<img src="img/icon/tailwind.png" alt="" height="30px">
-							<img src="img/icon/react.png" alt="" height="40px">
-							<img src="img/icon/next.png" alt="" height="40px">
-						</div>
-					</div>
-					<div class="box">
-						<h1>OTHER</h1>
-						<div class="logo">
-							<img src="img/icon/ai.png" alt="" height="60px">
-							<img src="img/icon/affinity.png" alt="" height="70px">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- SKILL END -->
+              <p>
+                Ternate - Maluku Utara <br />
+                asilt94@gmail.com <br />
+                +62 821 8856 6992
+              </p>
 
+              <div class="social">
+                <a href="https://instagram.com/bangsile_" class="soc-med">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/bangsile" class="soc-med">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="form-contact">
+              <input type="text" name="" id="" placeholder="Name" />
+              <input type="text" name="" id="" placeholder="Email" />
+              <textarea
+                type="text"
+                name=""
+                id=""
+                placeholder="Your message"
+              ></textarea>
+              <button>Submit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-		<!-- PROJECT -->
-		<section id="project" class="project">
-			<div class="container">
-				<h1 class="title">PROJECT</h1>
-				<div class="my-project">
-					<div class="box">
-						<div class="image siman-perpus"></div>
-						<div>
-							<h1>SISTEM MANAJEMEN PERPUSTAKAAN SEKOLAH</h1>
-							<div class="techs">
-								<div class="tech">Laravel</div>
-								<div class="tech">Tailwind</div>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<div class="image animelist"></div>
-						<div>
-							<h1>ANIMELIST</h1>
-							<div class="techs">
-								<div class="tech">NEXT.js</div>
-								<div class="tech">React</div>
-								<div class="tech">Tailwind</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- PROJECT END -->
+    <footer>&copy; 2023 - Made by Asil Taufiqurrahman</footer>
+    <button id="top-btn" onclick="goToTop()" class="go-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
 
-		<!-- EXPERIENCE -->
-		<section id="experience" class="experience">
-			<div class="container">
-				<h1 class="title">EXPERIENCE</h1>
-				<div class="my-exp">
-					<div class="box">
-						<div class="image" style="background-image: url(img/exp/fga.png);"></div>
-						<div>
-							<h1>FGA : Database Design & Programming with SQL</h1>
-						</div>
-					</div>
-					<div class="box">
-						<div class="image" style="background-image: url(img/exp/oracle.png);"></div>
-						<div>
-							<h1>Oracle Certified Foundations Associate, Database</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- EXPERIENCE END -->
-
-		<!-- CONTACT -->
-		<section id="contact" class="contact">
-			<div class="container">
-				<!-- <h1 class="title">CONTACT ME</h1> -->
-				<div class="contact-me">
-					<div class="my-contact">
-						<h1>Contact Me</h1>
-						<h3>Let's get closer</h3>
-						<h4>Feel free to contact me for collab and business</h4>
-
-						<p>Ternate - Maluku Utara <br> asilt94@gmail.com <br> +62 821 8856 6992</p>
-
-						<div class="social">
-							<a href="https://instagram.com/bangsile_" class="soc-med">
-								<i class="fa-brands fa-instagram"></i>
-							</a>
-							<a href="https://github.com/bangsile" class="soc-med">
-								<i class="fa-brands fa-github"></i>
-							</a>
-							
-						</div>
-					</div>
-					<div class="form-contact">
-						<input type="text" name="" id="" placeholder="Name">
-						<input type="text" name="" id="" placeholder="Email">
-						<textarea type="text" name="" id="" placeholder="Your message"></textarea>
-						<button>Submit</button>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- <div class="lo"></div> -->
-
-	</div>
-	<button id="top-btn" onclick="goToTop()" class="go-top">
-		<i class="fa-solid fa-angle-up"></i>
-	</button>
-
-
-
-
-
-
-	<script src="https://kit.fontawesome.com/110a439f2b.js" crossorigin="anonymous"></script>
-	<script src="js/script.js"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/110a439f2b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
