@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap');
 
 .light:root {
-	
 	--primary: #FFFFFF;
 	--secondary: #f3f3f3;
 	--accent: #76C893;
 	--text-color: #353535;
-	/*#838fba  c9d7c0*/
 	scroll-behavior: smooth;
 }
 
@@ -83,7 +81,6 @@ header {
 }
 
 .navbar {
-	/* border: 1px solid greenyellow ; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -121,10 +118,6 @@ nav a:hover, nav i:hover {
 	transform: translateY(-2px);
 }
 
-.content {
-	/* margin-top: 200px; */
-}
-
 .hero {
 	min-height: 100vh;
 	display: flex;
@@ -141,7 +134,6 @@ nav a:hover, nav i:hover {
 }
 
 .hero .desc {
-	/* border: 1px solid yellow; */
 	max-width: 50%;
 }
 
@@ -194,14 +186,11 @@ nav a:hover, nav i:hover {
 .soc-med:hover {
 	color: var(--primary);
 	background-color: var(--accent);
-	/* border: 0px solid var(--accent); */
 }
 
 .desc .contact-btn {
-	/* background-color: var(--accent); */
 	border: 2px solid var(--accent);
 	display: inline-block;
-	/* margin-top: 16px; */
 	padding: 10px 15px;
 	border-radius: 20px;
 	color: var(--accent);
@@ -217,7 +206,6 @@ nav a:hover, nav i:hover {
 
 
 section {
-	/* margin-top: 10px; */
 	padding: 90px 0;
 }
 section.skill, section.experience {
@@ -227,7 +215,6 @@ section.skill, section.experience {
 h1.title {
 	font-size: 26px;
 	font-weight: 600;
-	/* color: var(--accent); */
 	text-align: center;
 	width: 200px;
 	margin: 0 auto;
@@ -241,10 +228,7 @@ h1.title {
 	display: flex;
 	gap: 50px;
 	justify-content: center;
-	/* max-width: 700px; */
-	/* border: 1px solid white; */
 	padding: 40px 0px;
-	/* overflow-y: hidden; */
 }
 
 .my-skill h1 {
@@ -256,7 +240,6 @@ h1.title {
 
 .box {
 	width: 50%;
-	/* border: 1px solid var(--accent); */
 	border-radius: 15px;
 	height: 230px;
 	padding: 30px 15px;
@@ -266,12 +249,7 @@ h1.title {
 
 .my-skill .logo {
 	margin-top: 40px;
-	/* display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center; */
 	gap: 25px 0;
-	/* border: 1px solid yellow; */
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	justify-content: center;
@@ -283,7 +261,6 @@ h1.title {
 	transition: all .3s ease-in-out;
 }
 .my-skill img:hover {
-	/* height: 80px; */
 	transform: scale(1.2);
 }
 
@@ -352,7 +329,6 @@ h1.title {
 
 .my-exp .box {
 	height: 400px;
-	/* padding: 20px; */
 }
 
 .my-exp .box .image {
@@ -361,7 +337,6 @@ h1.title {
 }
 
 .contact-me {
-	/* border: 2px solid var(--accent); */
 	display: flex;
 	justify-content: space-between;
 }
@@ -388,7 +363,6 @@ h1.title {
 
 .form-contact {
 	width: 500px;
-	/* border: 2px solid var(--accent); */
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -445,12 +419,7 @@ footer {
 
 
 /* MOBILE */
-
 @media only screen and (max-width: 768px) {
-
-	.container {
-		/* padding: 0 40px; */
-	}
 
 	.content {
 		margin-top: 30px;
@@ -480,7 +449,6 @@ footer {
 		top: 80px;
 		padding: 20px 30px;
 		border-radius: 20px;
-		/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1); */
 		box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.2);
 
 		flex-direction: column;
@@ -495,7 +463,6 @@ footer {
 
 	nav a:hover {
 		color: var(--accent);
-		/* transform: translateX(-3px); */
 	}
 
 	.hero {
@@ -546,8 +513,6 @@ footer {
 		height: 300px;
 	}
 
-	.my-skill img {}
-
 	.my-skill::-webkit-scrollbar {
 		display: block;
 		height: 2px;
@@ -563,7 +528,6 @@ footer {
 	.form-contact {
 		width: 100%;
 	}
-
 }
 
 
